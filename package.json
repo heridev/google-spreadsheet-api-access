@@ -1,0 +1,16 @@
+{
+  "name": "requesting-data-to-google-forms",
+  "version": "1.0.0",
+  "description": "Google APIs requests",
+  "main": "GoogleForms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://elh.mx",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "axios": "^1.6.5",
+    "googleapis": "^105.0.0"
+  }
+}
