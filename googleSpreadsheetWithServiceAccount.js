@@ -11,7 +11,7 @@ const sendSmsTo = (smsNumber) => {
 
   axios
     .post(
-      'https://api.smsparatodos.com/v2/sms/create',
+      'https://api.smsforall.org/v2/sms/create',
       {
         sms_content: 'Gracias por participar en smsforall.org',
         sms_number: `+52${smsNumber}`,
