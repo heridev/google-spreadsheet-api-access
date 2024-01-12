@@ -31,7 +31,7 @@ const sendSmsTo = (smsNumber) => {
     });
 }
 
-async function readColumnFromSpreadsheet(spreadsheetId, range) {
+async function readColumnFromSpreadsheet(range) {
   // Load client secrets from a local file
   const client = auth.fromJSON(require('./service-account-apis-google.json'));
   client.scopes = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
@@ -64,7 +64,5 @@ async function readColumnFromSpreadsheet(spreadsheetId, range) {
   }
 }
 
-// Use the function
-const spreadsheetId = 'YOUR_SPREADSHEET_ID'; // replace with your Spreadsheet ID
 const range = 'B2:B';
-readColumnFromSpreadsheet(spreadsheetId, range);
+readColumnFromSpreadsheet(range);
